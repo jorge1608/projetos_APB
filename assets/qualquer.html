@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página qualquer</title>
+</head>
+<style>nav {
+ width: 100%;
+ background-color: #131A4B;
+ height: 60px; 
+}
+#top div {
+ float: left;
+}
+#logo {
+ border-right: 3px solid white;
+ width: 80px; 
+ height: auto; 
+}
+}
+div#menu {
+ margin: 0;
+ padding: 0;
+ background-color: #161a25;
+}
+
+.menu_item {
+ float: left;
+}
+
+.menu_item a, div#search, .menu_item .dropdown, .dropdown_content a {
+ display: block;
+ color: #ffffff;
+ padding: 15px 17px;
+ text-decoration: none;
+}
+
+.menu_item a:hover, .menu_item .dropdown:hover, .dropdown_content a:hover search:hover {
+ background-color: #80C4FF;
+ color: #131A4B;
+ cursor: pointer;
+}
+
+div#search {
+ background-color: #131A4B;
+ border-left: 2px solid white;
+ padding: 11px 11px;
+ float:right;
+}
+div#search input, #btn_search {
+ font-size: 1.2em;
+ border: 1px solid #131A4B;
+}
+#btn_search {
+ background-color: #131A4B;
+ color: white;
+}
+.dropdown {
+  position: relative;
+  display: block;
+}
+.dropdown_content {
+  display: none;
+  position: absolute;
+  min-width: 150px;
+  background-color: #161a25;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+  padding: 16px 18px;
+  z-index: 1;
+  margin-top: 15px;
+}
+
+.dropdown:hover .dropdown_content {
+  display: block;
+}
+
+footer {
+ /*position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;*/
+   background-color: #131A4B;
+   color: white;
+   text-align: center;
+}
+
+.footer_section {
+ display: inline-block;
+ height: 90%;
+ width: 30%;
+ padding: 8px 10px;
+ vertical-align: text-top;
+}
+img {
+  width: 70px; 
+  height: auto; 
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.mySlides {
+ display:none;
+ border-radius: 15px;
+  
+
+}
+.w3-content {
+ box-shadow: 15px 20px 30px #131A4B;
+ border-radius: 15px;
+}</style>
+<body>
+    <div class="row">
+        <div class="col-12">
+        <nav>
+         <div id="top">
+          <div id="logo">
+           <a href="index.html"> <img src="logo.png" alt="logo" width="115" /></a>
+          </div>
+          <div id="menu">
+           <div class="menu_item"><a href="#">
+            <span class="glyphicon glyphicon-home"></span> Home</a></div>
+           <div class="menu_item">
+            <div class="dropdown">
+             <span class="glyphicon glyphicon-shopping-cart"></span> Produtos
+             <div class="dropdown_content">
+              <a href="#">Placas Solares</a>
+              <a href="#">Geradores</a>
+             
+             </div>
+            </div>
+           </div>
+           <div class="menu_item">
+            <div class="dropdown">
+             <span class="glyphicon glyphicon-star"></span> Quero Comprar
+             
+             </div>
+            </div>
+           </div>
+           <div class="menu_item">
+            <a href="#"><span class="glyphicon glyphicon-info-sign"></span> Sobre</a>
+           </div>
+           <div class="menu_item">
+            <div class="dropdown">
+             <span class="glyphicon glyphicon-share"></span> Compartilhe
+             <div class="dropdown_content">
+              <a href="https://www.facebook.com/people/EcoSun-Placas/pfbid02eBrUvpYTF5QBccbcYBsQKQFEBNfBWxJr1SCxeeaFDHkyN4brMQFgC4HGjuA5WhCXl/" target="_blank"><i class="fa fa-facebook-f"></i> Facebook</a>
+              <a href="https://www.instagram.com/ecosun/"target="_blank"><i class="fa fa-instagram"></i> Instagram</a>
+              <a href="https://www.youtube.com/@EcoSun_/about"target="_blank"><i class="fa fa-youtube"></i> YouTube</a>
+              <a href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQEa2YjyCoImmAAAAYjpwZFImFtbol0guNpTXOE7ypmZsWjtbg5jHOpjBz7Y-Lc67uItl2VAMZwM9iTGdJJkei5li9MiqhCaBc9Cj1667mwCHb3hzpdAN7c8vym0UxilbjFLCk0=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fecosun-placas-solares-8438b3280%2F"target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div id="search">
+           <input type="text" id="inp_search" placeholder="digite..." />
+           <button id="btn_search">
+            <span class="glyphicon glyphicon-search"></span>Pesquisar
+           </button>
+          </div>
+         </nav>
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-12">
+        <div class="w3-content w3-display-container">
+         <img class="mySlides" src="logo1.png" style="width:100%">
+         <img class="mySlides" src="logo2.png" style="width:100%">
+         <img class="mySlides" src="logo3.png" style="width:100%;">
+         <img class="mySlides" src="logo4.png" style="width:100%">
+         <img class="mySlides" src="logo5.png" style="width:100%">
+         <img class="mySlides" src="logo6.png" style="width:100%">
+          
+         <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+         <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-2">
+        Coluna da esquerda
+       </div>
+       <div class="col-8">
+        <div class="item">
+         <h1>Renovável: </h1>
+         <p> A nossa energia solar é renovável pois não emite gases poluentes 
+         na atmosfera, sendo assim não polui o ar e seu impacto no meio ambiente é mínimo.
+         </p>
+        </div>
+        <div class="item">
+         <h1>Economia: </h1>
+         <p> Essa fonte de energia é considerada a mais barata do mundo por ser 
+         gerada através da luz solar, que é uma fonte gratuita e inesgotável de energia. 
+         Os valores da sua conta de energia serão reduzidos em até 95%. 
+      
+         </p>
+        </div> 
+      
+        <div class="item">
+         <h1>Durabilidade:</h1>
+         <p>As placas solares tem uma longa durabilidade de no mínimo 25 anos.</p>
+        </div>
+      
+        <div class="item">
+         <h1>Custo de manutenção:</h1>
+         <p> Custo baixo de manutenção, os consumidores não teram problemas com o preço pois os dispositivos possuem uma longa duração.
+         Em média os consumidores gastam cerca de 0,5% por ano, referente ao valor inicial do investimento.
+         </p>
+        </div>
+        <div class="item">
+         <h1>Fotovoltaica:</h1>
+         <p>Funciona com a conversão da radiação solar em energia elétrica.
+         Essa conversão é realizada pelas células fotovoltaicas, composta por 
+         material semicondutor como o silício.
+         Esse sistema não exige um ambiente com muita radiação para funcionar.
+         </p>
+        </div>
+       </div>
+       <div class="col-2">
+        <img src="imagem.png" alt="imagem" style="width: 250px;" />
+       </div>
+      </div>
+      <div class="row">
+       <footer class="col-12">
+        <div class="footer_section">
+         <h4>FILIAIS</h4><hr />
+         <span class="glyphicon glyphicon-phone"></span>
+         <i class="fa fa-whatsapp"></i> (21) 9.9985-5658 - Niterói :::
+         <i class="fa fa-envelope"></i> ecosuncomercial@gmail.com<hr />
+         <span class="glyphicon glyphicon-phone"></span> 
+         <i class="fa fa-whatsapp"></i> (11) 9.9985-5452 - São Paulo :::
+         <i class="fa fa-envelope"></i> ecosuncomercial@gmail.com<hr />
+         <span class="glyphicon glyphicon-phone"></span>
+         <i class="fa fa-whatsapp"></i> (71) 9.9977-5241 - Salvador :::
+         <i class="fa fa-envelope"></i> ecosuncomercial@gmail.com
+        </div>
+        <div class="footer_section">
+         <h4>NOVIDADES</h4><hr />
+         <p>Cadastre-se para receber as novidades<p>
+         <label for="inp_email">Seu e-mail: </label>
+         <input type="text" id="inp_news" /><br />
+         <p><input type="checkbox" id="check_news" /> Concordo com os termos.</p>
+         <button id="btn_search">
+          <span class="glyphicon glyphicon-envelope"></span> OK
+         </button>
+        </div>
+        <div class="footer_section">
+         <h4>SAC</h4><hr />
+         <i class="fa fa-file"></i> (41) 4002-8922<hr />
+         <i class="fa fa-file"></i> ecosuncomercial@gmail.com<hr />
+         <i class="fa fa-file"></i> Rua: Padre Natal Pigatto, 345
+        </div>
+       </footer>
+      </div>
+      <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+      
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+      
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        x[slideIndex-1].style.display = "block";  
+      }
+      </script>
+
+</body>
+</html>
